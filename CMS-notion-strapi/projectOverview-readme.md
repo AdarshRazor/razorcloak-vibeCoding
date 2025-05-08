@@ -38,7 +38,7 @@ I want to create a NextJS app and use Notion as a CMS to manage my content. I ju
 
 ## Variables and Usefull stuffs
 
-* **Database ID**: `1ed444a8256d8090a385e21cee71ede5`
+* **Database ID**: `database_id`
 
 
 
