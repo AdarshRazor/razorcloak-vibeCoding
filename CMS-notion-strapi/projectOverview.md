@@ -51,24 +51,22 @@ I want to create a NextJS app and use Notion as a CMS to manage my content. I ju
 
 ## Steps - Strapi [working] ⚒ [Folder](./strapi/)
 
-* [working] Create a strapi nextjs app `npx create-strapi-app@latest`
+* [done] Create a strapi nextjs app `npx create-strapi-app@latest`
+    - Email: `adarshanshu7@gmail.com`
+    - password: `demoPassword!1`
 
-* [] Set up the admin panel
+* [done] Set up the admin panel
     - Create first administrator user
     - Access admin panel at http://localhost:1337/admin
 
-* [] Create content structure
-    - Create "Restaurant" collection type
-        * Name (Text, Required, Unique)
-        * Description (Rich Text)
-    - Create "Category" collection type
-        * Name (Text, Required, Unique)
-        * Relation to Restaurant
+* [done] Create content structure
+    - Create "Blog" collection type
+        title, slug, content coverImage, publishedAt
 
-* [] Configure API permissions
+* [working] Configure API permissions `STRAPI_PUBLIC_API_KEY`
     - Go to Settings > Users & Permissions > Roles
     - Configure Public role permissions
-    - Enable find and findOne for Restaurant and Category
+    - Enable find and findOne for Blog
 
 * [] Create and publish content
     - Add sample restaurants
@@ -93,7 +91,7 @@ I want to create a NextJS app and use Notion as a CMS to manage my content. I ju
 
 ## Variables and Usefull stuffs
 
-* **Database ID**: `1ed444a8256d8090a385e21cee71ede5`
+* **Database ID**: `database_id`
 
 
 
