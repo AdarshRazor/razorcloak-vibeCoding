@@ -40,6 +40,11 @@ I want to create a NextJS app and use Notion as a CMS to manage my content. I ju
 
 * **Database ID**: `database_id`
 
+  URL looks like: "https://www.notion.so/yourworkspace-Blog-CMS-abcd1234efgh5678ijkl9012mnop3456"
+
+  The part after the last `/` and before `?` is your Database ID:
+  `abcd1234efgh5678ijkl9012mnop3456`
+
 
 
 ## Code Snippets
