@@ -2,7 +2,25 @@
 ## Project Overview
 I want to create a NextJS app and use Notion as a CMS to manage my content. I just want to display some simple data. Below are the steps i am working on to achieve this.
 
-## Steps
+| Feature                  | **Notion**                                  | **Strapi**                                             |
+| ------------------------ | ------------------------------------------- | ------------------------------------------------------ |
+| **Type**                 | Headless CMS via API wrapper                | Full-featured Headless CMS                             |
+| **Hosting**              | Notion-hosted                               | Self-hosted or Cloud (Strapi Cloud, Vercel + DB, etc.) |
+| **Best For**             | Simple content management by non-tech users | Scalable, structured content APIs with custom logic    |
+| **Setup Time**           | Super fast (5–15 mins)                      | Medium (30 mins–1 hr)                                  |
+| **Custom Backend Logic** | ❌ Not possible                              | ✅ Fully customizable (Node.js backend)                 |
+| **Authentication**       | ❌ Not built-in                              | ✅ Full user roles, JWT, API access control             |
+| **Rich Text/Blocks**     | ✅ Notion blocks, nested content, flexible   | ⚠️ Limited — Markdown or WYSIWYG only                  |
+| **Database Modeling**    | Limited (no relations, types are basic)     | Full relational database modeling                      |
+| **Performance**          | Great for light content                     | More scalable for heavy traffic                        |
+| **Integrations**         | Poor (via Zapier or manual)                 | Strong API & webhook support                           |
+| **API Access**           | Read-only (mostly)                          | Full CRUD support                                      |
+| **Cost**                 | Free (for basic use)                        | Free (self-hosted), Paid for Strapi Cloud              |
+| **Editor UX**            | Excellent — perfect for non-tech users      | Good — but more structured and admin-like              |
+
+
+
+## Steps - Notion [Completed] ✅ [Folder](./notion/)
 
 * [done] Create a new NextJS app (obvisously)
 
@@ -28,7 +46,44 @@ I want to create a NextJS app and use Notion as a CMS to manage my content. I ju
   - [done] fetch the data from the Notion database 
   - [done] display the data in the page (in a better way)
 
-* [done] Complete 🎉🙌
+* [done] Complete 🎉🙌 : check description for github link
+
+
+## Steps - Strapi [working] ⚒ [Folder](./strapi/)
+
+* [working] Create a strapi nextjs app `npx create-strapi-app@latest`
+
+* [] Set up the admin panel
+    - Create first administrator user
+    - Access admin panel at http://localhost:1337/admin
+
+* [] Create content structure
+    - Create "Restaurant" collection type
+        * Name (Text, Required, Unique)
+        * Description (Rich Text)
+    - Create "Category" collection type
+        * Name (Text, Required, Unique)
+        * Relation to Restaurant
+
+* [] Configure API permissions
+    - Go to Settings > Users & Permissions > Roles
+    - Configure Public role permissions
+    - Enable find and findOne for Restaurant and Category
+
+* [] Create and publish content
+    - Add sample restaurants
+    - Add categories
+    - Publish content
+
+* [] Integrate with NextJS
+    - Set up API endpoints
+    - Fetch data from Strapi
+    - Display content in NextJS app
+
+* [] Complete 🎉🙌
+
+
+
 
 ### Please do not use my API >_<
 
@@ -38,12 +93,7 @@ I want to create a NextJS app and use Notion as a CMS to manage my content. I ju
 
 ## Variables and Usefull stuffs
 
-* **Database ID**: `database_id`
-
-  URL looks like: "https://www.notion.so/yourworkspace-Blog-CMS-abcd1234efgh5678ijkl9012mnop3456"
-
-  The part after the last `/` and before `?` is your Database ID:
-  `abcd1234efgh5678ijkl9012mnop3456`
+* **Database ID**: `1ed444a8256d8090a385e21cee71ede5`
 
 
 
