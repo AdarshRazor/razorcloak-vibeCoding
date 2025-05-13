@@ -24,7 +24,7 @@ I want to create a NextJS app and use Notion as a CMS to manage my content. I ju
 
 * [done] Create a new NextJS app (obvisously)
 
-* [done] Create a new Notion app (obvisously)
+* [done] Create a new Notion Database (obvisously)
 
 * [done] Create a new Strapi app (obvisously) .. Hope you got that 
 
